@@ -1,0 +1,174 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel do Aluno | CEEP</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f3f0f8;
+      color: #243047;
+    }
+
+    header {
+      background: #8f7ab8;
+      color: white;
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    header h1 { margin: 0; font-size: 1.45rem; }
+    header p { margin: 6px 0 0; color: #eee7fa; }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: .95rem;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: 38px auto;
+      padding: 0 20px;
+    }
+
+    .welcome {
+      background: white;
+      border-radius: 16px;
+      padding: 26px;
+      margin-bottom: 28px;
+      box-shadow: 0 5px 18px rgba(28, 45, 80, .07);
+    }
+
+    .welcome h2 { margin: 0 0 8px; color: #8f7ab8; }
+    .welcome p { margin: 0; color: #63708a; line-height: 1.5; }
+    .section-title { margin: 0 0 16px; font-size: 1.35rem; }
+
+    .events {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .event {
+      background: white;
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: 0 5px 18px rgba(28, 45, 80, .07);
+      border-top: 4px solid #b8a4d9;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #eee7fa;
+      color: #6e5899;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: .8rem;
+      font-weight: bold;
+    }
+
+    .event h3 { margin: 14px 0 10px; color: #8f7ab8; }
+    .event p { color: #63708a; line-height: 1.5; margin: 7px 0; }
+
+    .event button {
+      width: 100%;
+      margin-top: 14px;
+      padding: 11px;
+      border: 0;
+      border-radius: 8px;
+      background: #a18bc9;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      margin-top: 46px;
+      padding: 22px;
+      background: #e9e2f3;
+      color: #655777;
+      text-align: center;
+      font-size: .9rem;
+    }
+
+    @media (max-width: 560px) {
+      header { padding: 20px; }
+      nav a { margin-left: 0; margin-right: 14px; }
+      main { margin-top: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>CEEP | Eventos da Escola</h1>
+      <p>Sistema de Gestão de Eventos</p>
+      <p>Centro Estadual de Educação Profissional</p>
+    </div>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#eventos">Eventos</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="welcome">
+      <h2>Olá, aluno(a)!</h2>
+      <p>Confira os próximos eventos da escola técnica e encontre uma atividade para participar.</p>
+    </section>
+
+    <section id="eventos">
+      <h2 class="section-title">Próximos Eventos</h2>
+      <div class="events">
+        <article class="event">
+          <span class="tag">Palestra</span>
+          <h3>Inteligência Artificial</h3>
+          <p><strong>Data:</strong> 22/10/2026</p>
+          <p><strong>Horário:</strong> 19h às 20h30</p>
+          <p><strong>Alunos inscritos:</strong> 35</p>
+          <p>Conheça aplicações da IA nos estudos e no mercado de trabalho.</p>
+          <button type="button">Inscrever-se</button>
+        </article>
+
+        <article class="event">
+          <span class="tag">Oficina</span>
+          <h3>Introdução à Programação</h3>
+          <p><strong>Data:</strong> 27/10/2026</p>
+          <p><strong>Horário:</strong> 14h às 16h</p>
+          <p><strong>Alunos inscritos:</strong> 20</p>
+          <p>Aprenda conceitos básicos de programação com exemplos práticos.</p>
+          <button type="button">Inscrever-se</button>
+        </article>
+
+        <article class="event">
+          <span class="tag">Workshop</span>
+          <h3>Preparação para o Primeiro Emprego</h3>
+          <p><strong>Data:</strong> 04/11/2026</p>
+          <p><strong>Horário:</strong> 19h às 21h</p>
+          <p><strong>Alunos inscritos:</strong> 28</p>
+          <p>Dicas para montar currículo e se preparar para entrevistas.</p>
+          <button type="button">Inscrever-se</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Sistema de Gestão de Eventos (SGE) • CEEP
+  </footer>
+</body>
+</html>

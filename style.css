@@ -1,0 +1,141 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f0f8;
+  color: #243047;
+}
+
+header {
+  background: #8f7ab8;
+  color: white;
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.45rem;
+}
+
+header p {
+  margin: 6px 0 0;
+  color: #eee7fa;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: .95rem;
+}
+
+main {
+  max-width: 1050px;
+  margin: 38px auto;
+  padding: 0 20px;
+}
+
+.welcome {
+  background: white;
+  border-radius: 16px;
+  padding: 26px;
+  margin-bottom: 28px;
+  box-shadow: 0 5px 18px rgba(28, 45, 80, .07);
+}
+
+.welcome h2 {
+  margin: 0 0 8px;
+  color: #8f7ab8;
+}
+
+.welcome p {
+  margin: 0;
+  color: #63708a;
+  line-height: 1.5;
+}
+
+.section-title {
+  margin: 0 0 16px;
+  font-size: 1.35rem;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.event {
+  background: white;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 5px 18px rgba(28, 45, 80, .07);
+  border-top: 4px solid #b8a4d9;
+}
+
+.tag {
+  display: inline-block;
+  background: #eee7fa;
+  color: #6e5899;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.event h3 {
+  margin: 14px 0 10px;
+  color: #8f7ab8;
+}
+
+.event p {
+  color: #63708a;
+  line-height: 1.5;
+  margin: 7px 0;
+}
+
+.event button {
+  width: 100%;
+  margin-top: 14px;
+  padding: 11px;
+  border: 0;
+  border-radius: 8px;
+  background: #a18bc9;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 46px;
+  padding: 22px;
+  background: #e9e2f3;
+  color: #655777;
+  text-align: center;
+  font-size: .9rem;
+}
+
+@media (max-width: 560px) {
+  header {
+    padding: 20px;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 14px;
+  }
+
+  main {
+    margin-top: 24px;
+  }
+}
